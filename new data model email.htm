@@ -1,0 +1,412 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Untitled</title>
+    <style>
+        @media only screen and (min-width: 480px) {
+            body, #bodyTable, #bodyCell {
+                height: 100% !important;
+                margin: 0;
+                padding: 0;
+                width: 100% !important;
+            }
+        }
+    </style>
+    <style>
+        /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+        #outlook a {
+            padding: 0;
+        }
+        /* Force Outlook to provide a "view in browser" message */
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+            /* Force Hotmail to display emails at full width */
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+                line-height: 100%;
+            }
+        /* Force Hotmail to display normal line spacing */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        /* Prevent WebKit and Windows mobile changing default text sizes */
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        /* Remove spacing between tables in Outlook 2007 and up */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        /* Allow smoother rendering of resized image in Internet Explorer */
+
+        /* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* /\/\/\/\/\/\/\/\/ PREHEADER /\/\/\/\/\/\/\/ */
+        #templatePreheader {
+            color: #505050;
+        }
+
+        .preheaderContent {
+            color: #808080;
+            font-family: bentonsans-book, Arial, sans-serif;
+            font-size: 10px;
+            line-height: 125%;
+            text-align: center;
+        }
+
+            .preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */ {
+                color: #606060;
+                font-weight: normal;
+                text-decoration: underline;
+            }
+
+        /* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/ */
+
+        @font-face {
+            font-family: bentonsans-book;
+            src: url("https://partners.tableau.com//Library/Style/Fonts/bentonsans-book.otf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        #logoHeader {
+            height: 40px;
+            padding-bottom: 16px;
+        }
+
+        #bodyCell {
+            padding: 20px;
+        }
+
+        #templateContainer {
+            width: 600px;
+            border: 1px solid #efefef;
+        }
+
+        .bodyContent {
+            color: #505050;
+            font-family: bentonsans-book, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 150%;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+            padding-left: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #5f6166;
+            display: block;
+            font-family: bentonsans-book, Arial, sans-serif;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 50px;
+            letter-spacing: normal;
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 10px;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .leftColumnContainer {
+            width: 200px;
+            vertical-align: top;
+        }
+
+        .leftColumnContent {
+            color: #505050;
+            font-family: bentonsans-book, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 150%;
+            padding-top: 0;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .rightColumnContainer {
+            width: 320px;
+            vertical-align: top;
+        }
+
+        .rightColumnContent {
+            color: #505050;
+            font-family: bentonsans-book, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 150%;
+            padding-top: 0;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+            .leftColumnContent img, .rightColumnContent img {
+                height: auto;
+                max-width: 200px;
+            }
+
+        .logoImg {
+            height: 40px;
+            width: auto;
+        }
+
+        .hero {
+            height: auto;
+            max-width: 640px;
+        }
+
+        .emailButton {
+            background-color: #0071bd;
+            border-collapse: separate;
+        }
+
+        .buttonContent {
+            color: #FFFFFF;
+            font-family: bentonsans-book, Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 100%;
+            padding: 15px;
+            text-align: center;
+        }
+
+            .buttonContent a, .buttonContent a:link, .buttonContent a:visited {
+                color: #fff;
+                text-decoration: none;
+            }
+    </style>
+    <style>
+        /* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+
+        @media only screen and (max-width: 480px) {
+            /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+            body, table, td, p, a, li, blockquote {
+                -webkit-text-size-adjust: none !important;
+            }
+            /* Prevent Webkit platforms from changing default text sizes */
+            body {
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+            /* Prevent iOS Mail from adding padding to the body */
+
+            /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+            #bodyCell {
+                padding: 10px !important;
+            }
+
+            /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/ */
+            #templateContainer {
+                max-width: 600px !important;
+                width: 100% !important;
+            }
+
+            h1 {
+                font-size: 16px !important;
+                line-height: 125% !important;
+            }
+
+            #colorbar {
+                height: auto !important;
+                max-width: 600px !important;
+                width: 100%;
+            }
+
+            .leftColumnContainer, .rightColumnContainer {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            .emailButton {
+                width: 100% !important;
+            }
+
+            .leftColumnContent img, .rightColumnContent img {
+                height: auto !important;
+                max-width: 480px !important;
+                width: 100% !important;
+            }
+        }
+    </style>
+    
+
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    <center>
+        <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="640px" id="bodyTable">
+            <tr>
+                <td align="center" valign="top" id="bodyCell">
+                    <table border="0" cellpadding="0" cellspacing="0" id="templateContainer" style="border: 1px solid #efefef;">
+                        <tr>
+                            <td align="center" valign="top" id="logoHeader" style="height: 60px; padding: 20px 15px;">
+                                <!-- Logo Header Area     -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr height="60px">
+                                        <td width="" align="left" style="vertical-align:top; padding-left:; padding-right:; float: left;">
+                                            <img height="60" align="left" class="logoImg" style="float:left; height: 60px; max-height: 60px; width: auto; max-width: 100%; " src="newlogo.png">
+
+                                        </td>
+                                        <td width="" align="right" style=" vertical-align:top; padding-right:;">
+                                            <img height="40" align="right" class="logoImg" style="float:right; height: 40px; max-height: 40px; width: auto; max-width: 100%;" src="https://partners.tableau.com//Images/TemplateLogos/c0f1a123-367e-477a-95c0-7b8f8f63c114.png">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="top">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td>
+                                            <img src="header.png" class="hero" width="640" height="" style="height: auto;" alt="">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bodyContent" align="center" valign="top" style="padding: 20px;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <!--<tr>
+                                        <td>
+                                            <h1>
+                                                <span style="color: #5F6166; font-size: 36px; word-wrap: break-word; overflow: visible;">In 2020.2 release, Tableau introduces new data model, metrics set control, and much more!</span>
+                                            </h1>
+                                        </td>
+                                    </tr>-->
+                                    <tr>
+                                        <td class="bodyContent" style="padding: 5px 0;">
+                                            <span style="color: #5F6166; font-size: 22px; word-wrap: break-word; overflow: visible;">In 2020.2 release, Tableau introduces <b>new data model</b>, <b>metrics</b>, <b>set control</b>, and much more!</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bodyContent" style="padding: 0px 0;">
+                                            <span style="color: #0071bd; font-size: 16px; word-wrap: break-word; overflow: visible;"><a href="https://www.tableau.com/en-gb/products/new-features" style="color: #0071bd;"><b>LEARN MORE ››</b></a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bodyContent" style="padding: 20px 0; text-align: left;">
+                                            <span style="color: #5F6166; font-size: 18px; word-wrap: break-word; overflow: visible;">Tableau new data model will revolutionize the way you connect to the data. <br>
+                                            With the new data model, tableau introduces relationships which are a new way to combine data that is easy, fast and more flexible than using joins. A relationship describes how two tables relate to each other, based on common fields, but does not merge the tables together.</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bodyContent" style="padding: 0px 0; text-align: left;">
+                                            <span style="color: #0071bd; font-size: 16px; word-wrap: break-word; overflow: visible;">Stay tuned for our blog post about Tableau new data model! <br><br><br>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table align="center" class="emailButton" style="font-size: 18px; font-weight: bold; line-height: 100%; margin: 0 auto 40px auto; text-align: center;">
+                                    <tr>
+                                        <td align="center" class="buttonContent" style="background: #0071bd; color: #FFFFFF; margin: 0 auto 0 auto; padding: 20px;">
+                                            <a href="https://www.tableau.com/en-gb/products/new-features" target="_blank" style="color: #fff; padding: 15px;"><span style="color: #FFFFFF; text-align: Center; font-size: 18px; word-wrap: break-word; overflow: hidden;">GET THE NEW RELEASE   ››</span></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="background: #2c3338; padding:40px 0 25px 0;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="font-family: bentonsans-book,  Arial, sans-serif; color:#fff; text-align: center; width:100%;">
+                                    <tr>
+                                        <td colspan="3">
+                                            <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="color:#fff;width:100%;">
+                                                <tr>
+                                                    <td style="width:90px;"></td>
+                                                    <td style="width: 420px; text-align: center;max-width:200px; line-height:20.8px; font-size:12px;font-family: bentonsans-book,  Arial, sans-serif;">Dataplus, 41,9 street, Maadi  cairo  11431</td>
+                                                    <td style="width:90px;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width:90px;"></td>
+                                                    <td style="width: 420px; text-align: center;padding-bottom:15px;line-height:20.8px; font-size:12px;font-family: bentonsans-book,  Arial, sans-serif;">
+                                                        Egypt | Cairo
+                                                    </td>
+                                                    <td style="width:90px;"></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:150px;"></td>
+                                        <td style="width:300px;">
+                                            <div style="border-top:1px solid #525659; height:1px; font-size:1px; ">
+                                                &nbsp;
+                                            </div>
+                                        </td>
+                                        <td style="width:150px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:150px;"></td>
+                                        <td style="width:300px; padding-top:15px;text-align: center;">
+                                            <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="max-width:300px; color:#fff; text-align: center;">
+                                                <tr>
+                                                    <a href="https://www.facebook.com/Dataplus-103636140079561/"><img src="https://partners.tableau.com//images/internalmailings/facebook.png"></a>
+                                                    
+                                                    <a href="https://www.linkedin.com/company/dataplus-information-systems/"><img src="https://partners.tableau.com//images/internalmailings/linkedin.png"></a>
+                                                    
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td style="width:150px;"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table style="background-color: #ffffff; width: 100%;">
+                                    <tr>
+                                        <td style="padding: 30px 20px 40px 20px;" align="center">
+                                            <span class="emailFooter" style="text-align: left; font-weight: lighter; font-size: 10px; color: #5f6166; line-height: 1.2em;"><span>This email and any offer considered in this document are brought to you by Dataplus.<br><br></span></span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
